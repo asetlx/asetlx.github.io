@@ -1,15 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    /* Color palette */
+    --md_theme_light_primary: #B90065;
+    --md_theme_light_onPrimary: #FFFFFF;
+    --md_theme_light_primaryContainer: #FFD8E4;
+    --md_theme_light_onPrimaryContainer: #3F001E;
+    --md_theme_light_secondary: #006970;
+    --md_theme_light_onSecondary: #FFFFFF;
+    --md_theme_light_secondaryContainer: #6FF5FF;
+    --md_theme_light_onSecondaryContainer: #002022;
+    --md_theme_light_tertiary: #6E5D00;
+    --md_theme_light_onTertiary: #FFFFFF;
+    --md_theme_light_tertiaryContainer: #FFE247;
+    --md_theme_light_onTertiaryContainer: #221B00;
+    --md_theme_light_error: #BA1B1B;
+    --md_theme_light_errorContainer: #FFDAD4;
+    --md_theme_light_onError: #FFFFFF;
+    --md_theme_light_onErrorContainer: #410001;
+    --md_theme_light_background: #FCFCFC;
+    --md_theme_light_onBackground: #1F1A1B;
+    --md_theme_light_surface: #FCFCFC;
+    --md_theme_light_onSurface: #1F1A1B;
+    --md_theme_light_surfaceVariant: #F2DEE2;
+    --md_theme_light_onSurfaceVariant: #514347;
+    --md_theme_light_outline: #837377;
+    --md_theme_light_inverseOnSurface: #FAEEEF;
+    --md_theme_light_inverseSurface: #352F30;
+    --md_theme_light_primaryInverse: #FFB0CB;
+    --md_theme_dark_primary: #FFB0CB;
+    --md_theme_dark_onPrimary: #650034;
+    --md_theme_dark_primaryContainer: #8D004B;
+    --md_theme_dark_onPrimaryContainer: #FFD8E4;
+    --md_theme_dark_secondary: #4CD9E4;
+    --md_theme_dark_onSecondary: #00363A;
+    --md_theme_dark_secondaryContainer: #004F55;
+    --md_theme_dark_onSecondaryContainer: #6FF5FF;
+    --md_theme_dark_tertiary: #E3C522;
+    --md_theme_dark_onTertiary: #3A3000;
+    --md_theme_dark_tertiaryContainer: #544600;
+    --md_theme_dark_onTertiaryContainer: #FFE247;
+    --md_theme_dark_error: #FFB4A9;
+    --md_theme_dark_errorContainer: #930006;
+    --md_theme_dark_onError: #680003;
+    --md_theme_dark_onErrorContainer: #FFDAD4;
+    --md_theme_dark_background: #1F1A1B;
+    --md_theme_dark_onBackground: #EBE0E1;
+    --md_theme_dark_surface: #1F1A1B;
+    --md_theme_dark_onSurface: #EBE0E1;
+    --md_theme_dark_surfaceVariant: #514347;
+    --md_theme_dark_onSurfaceVariant: #D5C2C6;
+    --md_theme_dark_outline: #9D8C90;
+    --md_theme_dark_inverseOnSurface: #1F1A1B;
+    --md_theme_dark_inverseSurface: #EBE0E1;
+    --md_theme_dark_primaryInverse: #B90065;
+    --seed: #FF2F95;
+    --error: #BA1B1B;
+
+    /* Light mode */
+    --colorPrimary: var(--md_theme_light_primary);
+    --colorOnPrimary: var(--md_theme_light_onPrimary);
+    --colorPrimaryContainer: var(--md_theme_light_primaryContainer);
+    --colorOnPrimaryContainer: var(--md_theme_light_onPrimaryContainer);
+    --colorSecondary: var(--md_theme_light_secondary);
+    --colorOnSecondary: var(--md_theme_light_onSecondary);
+    --colorSecondaryContainer: var(--md_theme_light_secondaryContainer);
+    --colorOnSecondaryContainer: var(--md_theme_light_onSecondaryContainer);
+    --colorTertiary: var(--md_theme_light_tertiary);
+    --colorOnTertiary: var(--md_theme_light_onTertiary);
+    --colorTertiaryContainer: var(--md_theme_light_tertiaryContainer);
+    --colorOnTertiaryContainer: var(--md_theme_light_onTertiaryContainer);
+    --colorError: var(--md_theme_light_error);
+    --colorErrorContainer: var(--md_theme_light_errorContainer);
+    --colorOnError: var(--md_theme_light_onError);
+    --colorOnErrorContainer: var(--md_theme_light_onErrorContainer);
+    --colorBackground: var(--md_theme_light_background);
+    --colorOnBackground: var(--md_theme_light_onBackground);
+    --colorSurface: var(--md_theme_light_surface);
+    --colorOnSurface: var(--md_theme_light_onSurface);
+    --colorSurfaceVariant: var(--md_theme_light_surfaceVariant);
+    --colorOnSurfaceVariant: var(--md_theme_light_onSurfaceVariant);
+    --colorOutline: var(--md_theme_light_outline);
+    --colorOnSurfaceInverse: var(--md_theme_light_inverseOnSurface);
+    --colorSurfaceInverse: var(--md_theme_light_inverseSurface);
+    --colorPrimaryInverse: var(--md_theme_light_primaryInverse);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark mode */
+        --colorPrimary: var(--md_theme_dark_primary);
+        --colorOnPrimary: var(--md_theme_dark_onPrimary);
+        --colorPrimaryContainer: var(--md_theme_dark_primaryContainer);
+        --colorOnPrimaryContainer: var(--md_theme_dark_onPrimaryContainer);
+        --colorSecondary: var(--md_theme_dark_secondary);
+        --colorOnSecondary: var(--md_theme_dark_onSecondary);
+        --colorSecondaryContainer: var(--md_theme_dark_secondaryContainer);
+        --colorOnSecondaryContainer: var(--md_theme_dark_onSecondaryContainer);
+        --colorTertiary: var(--md_theme_dark_tertiary);
+        --colorOnTertiary: var(--md_theme_dark_onTertiary);
+        --colorTertiaryContainer: var(--md_theme_dark_tertiaryContainer);
+        --colorOnTertiaryContainer: var(--md_theme_dark_onTertiaryContainer);
+        --colorError: var(--md_theme_dark_error);
+        --colorErrorContainer: var(--md_theme_dark_errorContainer);
+        --colorOnError: var(--md_theme_dark_onError);
+        --colorOnErrorContainer: var(--md_theme_dark_onErrorContainer);
+        --colorBackground: var(--md_theme_dark_background);
+        --colorOnBackground: var(--md_theme_dark_onBackground);
+        --colorSurface: var(--md_theme_dark_surface);
+        --colorOnSurface: var(--md_theme_dark_onSurface);
+        --colorSurfaceVariant: var(--md_theme_dark_surfaceVariant);
+        --colorOnSurfaceVariant: var(--md_theme_dark_onSurfaceVariant);
+        --colorOutline: var(--md_theme_dark_outline);
+        --colorOnSurfaceInverse: var(--md_theme_dark_inverseOnSurface);
+        --colorSurfaceInverse: var(--md_theme_dark_inverseSurface);
+        --colorPrimaryInverse: var(--md_theme_dark_primaryInverse);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
-    color: whitesmoke;
+    color: var(--colorOnBackground);
+    background: var(--colorBackground);
     font-family: 'Outfit', sans-serif;
 }
 
-body {
-    background: black;
-}
+body {}
 
 header {
     width: 100%;
