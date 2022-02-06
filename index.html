@@ -15,8 +15,10 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/images/logoipsum-logo-6.svg" alt="logo placeholder" id="logo">
+    <header id="navbar">
+        <div id="logo">
+            <h1>a</h1>
+        </div>
         <nav>
             <ul>
                 <li id="list-about"><a href="/about">About</a></li>
@@ -25,12 +27,26 @@
             </ul>
         </nav>
     </header>
+
     <!-- acceso a markdown
         <zero-md src="assets\md\index.md">
         <template>
         <link rel="stylesheet" href="assets\css\md-style.css">
         </template>
         </zero-md> -->
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
